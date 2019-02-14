@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var EnergyConsumedLBL: UILabel!
     
@@ -17,14 +17,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var weightTF: UITextField!
     @IBOutlet weak var activityTF: UITextField!
     
+    @IBOutlet weak var CalcBTN: UIButton!
+    @IBOutlet weak var clearBTN: UIButton!
+    
+    @IBOutlet weak var uiPickerView: UIPickerView!
     
     @IBAction func Calculate(_ sender: Any) {
-        if weightTF.text != "" && timeTF.text != ""{
+        if weightTF.text != "" && timeTF.text != "" || selectedAct == nil{
             if let weight = Int(weightTF.text!){
                 if let time = Int(timeTF.text!){
 //              let activity = Int(activityTF.text!)!
-                EnergyConsumedLBL.text! = "\(energyConsumed(during: .Bicycling, weight: weight, time: time)) cal"
-                TimeToLoosePoundLBL.text! = "\(timeToLose1Pound(during: .Bicycling, weight: 160)) minutes"
+                EnergyConsumedLBL.text! = "\(energyConsumed(during: selectedAct!, weight: weight, time: time)) cal"
+                TimeToLoosePoundLBL.text! = "\(timeToLose1Pound(during: selectedAct!, weight: weight)) minutes"
                 }
                 
             }
@@ -51,30 +55,70 @@ class ViewController: UIViewController {
     }
     
   
-    func calPerMin(during:MET,weight:Int) -> Double{
-        return during.rawValue * 3.5 * Double(weight) / 200
+    func calPerMin(during:String,weight:Int) -> Double{
+        if let met = metDict[during]{
+            return met * 3.5 * Double(weight) / 200
+        }
+        return 0.0
     }
-    func energyConsumed(during:MET,weight:Int,time:Int) -> Double{
-        return calPerMin(during: during, weight: weight) * Double(time)
+    func energyConsumed(during:String,weight:Int,time:Int) -> Double{
+        return calPerMin(during: selectedAct!, weight: weight) * Double(time)
     }
-    func timeToLose1Pound(during:MET,weight:Int) -> Double{
-        return 3500 / calPerMin(during: during, weight: weight)
+    func timeToLose1Pound(during:String,weight:Int) -> Double{
+        return 3500 / calPerMin(during: selectedAct!, weight: weight)
     }
+    var selectedAct:String?
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedAct = metDict.keys.sorted()[row]
+    }
+    var metDict:[String:Double] = [String:Double]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         EnergyConsumedLBL.text! = "0 cal"
         TimeToLoosePoundLBL.text! = "0 minutes"
+//        selectedAct = metDict.keys.sorted()[1]
+        clearBTN.layer.cornerRadius = 5
+        CalcBTN.layer.cornerRadius = 5
+        metDict = [
+            "Bicycling":8.0,
+            "Tennis":8.0,
+            "JumpingRope":12.3,
+            "RunningSlow": 9.8,
+            "RunningFast": 23.0,
+            "Swimming": 5.8
+        ]
         // Do any additional setup after loading the view, typically from a nib.
     }
+    // Number of columns of data
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+    return 1
+    }
+    
+    // The number of rows of data
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int)-> Int {
+    return metDict.count
+    }
+    
+    // The data to return fopr the row and component (column) that's being passed in
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int)-> String {
+    return metDict.keys.sorted()[row]
+    }
 
-
+    
 }
-
+//var metDict:[String:Double] = [
+//    "Bicycling":8.0,
+//    "Tennis":8.0,
+//    "JumpingRope":12.3,
+//    "RunningSlow": 9.8,
+//    "RunningFast": 23.0,
+//    "Swimming": 5.8
+//]
 enum MET:Double {
-    case Bicycling = 8.0
+    case Bicycling,Tennis = 8.0
     case JumpingRope = 12.3
     case RunningSlow = 9.8
     case RunningFast = 23.0
-//    case Tennis = 8.0
     case Swimming = 5.8
 }
