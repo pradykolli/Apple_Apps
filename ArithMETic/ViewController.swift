@@ -15,7 +15,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var TimeToLoosePoundLBL: UILabel!
     @IBOutlet weak var timeTF: UITextField!
     @IBOutlet weak var weightTF: UITextField!
-    @IBOutlet weak var activityTF: UITextField!
+//    @IBOutlet weak var activityTF: UITextField!
     
     @IBOutlet weak var CalcBTN: UIButton!
     @IBOutlet weak var clearBTN: UIButton!
@@ -23,12 +23,14 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var uiPickerView: UIPickerView!
     
     @IBAction func Calculate(_ sender: Any) {
-        if weightTF.text != "" && timeTF.text != "" || selectedAct == nil{
+        if weightTF.text != "" && timeTF.text != ""{
             if let weight = Int(weightTF.text!){
                 if let time = Int(timeTF.text!){
-//              let activity = Int(activityTF.text!)!
-                EnergyConsumedLBL.text! = "\(energyConsumed(during: selectedAct!, weight: weight, time: time)) cal"
-                TimeToLoosePoundLBL.text! = "\(timeToLose1Pound(during: selectedAct!, weight: weight)) minutes"
+                let energyConsumedValue = energyConsumed(during: selectedAct!, weight: weight, time: time)
+                let timeeToLoosePoundValue = timeToLose1Pound(during: selectedAct!, weight: weight)
+                    
+                EnergyConsumedLBL.text! = String(format:"%.2f",energyConsumedValue)+" cals"
+                TimeToLoosePoundLBL.text! = String(format:"%.2f",timeeToLoosePoundValue)+" minutes"
                 }
                 
             }
@@ -49,7 +51,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBAction func Clear(_ sender: Any) {
         weightTF.text! = ""
         timeTF.text! = ""
-        activityTF.text! = ""
+//        activityTF.text! = ""
         EnergyConsumedLBL.text! = "0 cal"
         TimeToLoosePoundLBL.text! = "0 minutes"
     }
