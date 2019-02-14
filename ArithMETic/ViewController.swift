@@ -24,13 +24,13 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     @IBAction func Calculate(_ sender: Any) {
         if weightTF.text != "" && timeTF.text != ""{
-            if let weight = Int(weightTF.text!){
+            if let weight = Double(weightTF.text!){
                 if let time = Int(timeTF.text!){
                 let energyConsumedValue = energyConsumed(during: selectedAct!, weight: weight, time: time)
                 let timeeToLoosePoundValue = timeToLose1Pound(during: selectedAct!, weight: weight)
                     
-                EnergyConsumedLBL.text! = String(format:"%.2f",energyConsumedValue)+" cals"
-                TimeToLoosePoundLBL.text! = String(format:"%.2f",timeeToLoosePoundValue)+" minutes"
+                EnergyConsumedLBL.text! = String(format:"%.1f",energyConsumedValue)+" cals"
+                TimeToLoosePoundLBL.text! = String(format:"%.1f",timeeToLoosePoundValue)+" minutes"
                 }
                 
             }
@@ -57,16 +57,16 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
   
-    func calPerMin(during:String,weight:Int) -> Double{
+    func calPerMin(during:String,weight:Double) -> Double{
         if let met = metDict[during]{
-            return met * 3.5 * Double(weight) / 200
+            return met * 3.5 * (Double(weight)/2.2) / 200
         }
         return 0.0
     }
-    func energyConsumed(during:String,weight:Int,time:Int) -> Double{
+    func energyConsumed(during:String,weight:Double,time:Int) -> Double{
         return calPerMin(during: selectedAct!, weight: weight) * Double(time)
     }
-    func timeToLose1Pound(during:String,weight:Int) -> Double{
+    func timeToLose1Pound(during:String,weight:Double) -> Double{
         return 3500 / calPerMin(during: selectedAct!, weight: weight)
     }
     var selectedAct:String?
