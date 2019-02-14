@@ -24,56 +24,56 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyV-BB-kJM">
-                                <rect key="frame" x="19" y="122" width="174" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Activity:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyV-BB-kJM">
+                                <rect key="frame" x="19" y="121" width="142.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Uc-Ov-qjC">
-                                <rect key="frame" x="19" y="161" width="174" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="19" y="165" width="135.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Exercise Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cs0-3p-FJb">
                                 <rect key="frame" x="18" y="201" width="175" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Energy consumed:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGR-UG-jao">
-                                <rect key="frame" x="19" y="243" width="174" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Energy consumed:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGR-UG-jao">
+                                <rect key="frame" x="16" y="243" width="142.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ztb-OE-FVB">
-                                <rect key="frame" x="201" y="243" width="165" height="21"/>
+                                <rect key="frame" x="162.5" y="240" width="203.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLk-Oe-img">
-                                <rect key="frame" x="201" y="287" width="165" height="21"/>
+                                <rect key="frame" x="162.5" y="280" width="203.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jwg-Yq-cdG">
-                                <rect key="frame" x="201" y="112" width="165" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter an activity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jwg-Yq-cdG">
+                                <rect key="frame" x="162.5" y="112" width="203.5" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bzl-ex-TLv">
-                                <rect key="frame" x="201" y="152" width="165" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter weight in Kgs" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bzl-ex-TLv">
+                                <rect key="frame" x="162.5" y="152" width="203.5" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G5N-ER-dXs">
-                                <rect key="frame" x="201" y="192" width="165" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter time in minutes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G5N-ER-dXs">
+                                <rect key="frame" x="162.5" y="192" width="203.5" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -81,37 +81,47 @@
                                     <action selector="timeTF:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="pNM-rM-mnx"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECc-tW-xQv">
-                                <rect key="frame" x="19" y="362" width="64" height="30"/>
-                                <state key="normal" title="Calculate"/>
-                                <connections>
-                                    <action selector="Calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xe3-sQ-ER0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snk-Ti-p08">
-                                <rect key="frame" x="201" y="362" width="36" height="30"/>
-                                <state key="normal" title="Clear"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snk-Ti-p08">
+                                <rect key="frame" x="16" y="400" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.64384310233160624" green="0.36151862656146883" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="tintColor" red="0.94100145725388606" green="0.52837337728214673" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="Clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r4H-9b-Wpl"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time to loose a pound:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UH9-kz-l0j">
-                                <rect key="frame" x="16" y="287" width="175" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time to loose a pound:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UH9-kz-l0j">
+                                <rect key="frame" x="16" y="287" width="152" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECc-tW-xQv">
+                                <rect key="frame" x="16" y="351" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.061461101910141001" green="0.53842402029531611" blue="0.32143176016808844" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="tintColor" red="0.061461101910141001" green="0.53842402029531611" blue="0.32143176016808844" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xe3-sQ-ER0"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="tGR-UG-jao" firstAttribute="leading" secondItem="ECc-tW-xQv" secondAttribute="leading" id="0zt-Ml-VAV"/>
                             <constraint firstItem="Bzl-ex-TLv" firstAttribute="top" secondItem="Jwg-Yq-cdG" secondAttribute="bottom" constant="10" id="1T8-7K-cCq"/>
                             <constraint firstItem="Jwg-Yq-cdG" firstAttribute="leading" secondItem="MyV-BB-kJM" secondAttribute="trailing" constant="8" symbolic="YES" id="3hh-7y-eYN"/>
-                            <constraint firstItem="ECc-tW-xQv" firstAttribute="baseline" secondItem="snk-Ti-p08" secondAttribute="baseline" id="4cF-o1-E08"/>
                             <constraint firstItem="G5N-ER-dXs" firstAttribute="trailing" secondItem="Ztb-OE-FVB" secondAttribute="trailing" id="4y2-7v-Yua"/>
                             <constraint firstItem="UH9-kz-l0j" firstAttribute="baseline" secondItem="RLk-Oe-img" secondAttribute="baseline" id="74U-7g-z2B"/>
                             <constraint firstItem="UH9-kz-l0j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8aI-GF-JJD"/>
-                            <constraint firstItem="RLk-Oe-img" firstAttribute="leading" secondItem="snk-Ti-p08" secondAttribute="leading" id="9iJ-Aw-aWI"/>
                             <constraint firstItem="7Uc-Ov-qjC" firstAttribute="bottom" secondItem="Bzl-ex-TLv" secondAttribute="bottom" id="BmG-hK-imM"/>
                             <constraint firstItem="Jwg-Yq-cdG" firstAttribute="top" secondItem="lgT-bc-NNN" secondAttribute="bottom" constant="21" id="Cap-lc-Q9f"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jwg-Yq-cdG" secondAttribute="trailing" constant="9" id="Gap-kn-RKG"/>
@@ -126,7 +136,6 @@
                             <constraint firstItem="Ztb-OE-FVB" firstAttribute="trailing" secondItem="RLk-Oe-img" secondAttribute="trailing" id="V0w-sI-upQ"/>
                             <constraint firstItem="lgT-bc-NNN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="VHb-YU-xbc"/>
                             <constraint firstItem="G5N-ER-dXs" firstAttribute="leading" secondItem="Cs0-3p-FJb" secondAttribute="trailing" constant="8" symbolic="YES" id="ZUF-dn-O5f"/>
-                            <constraint firstItem="ECc-tW-xQv" firstAttribute="top" secondItem="UH9-kz-l0j" secondAttribute="bottom" constant="54" id="bca-JV-5UX"/>
                             <constraint firstItem="RLk-Oe-img" firstAttribute="leading" secondItem="UH9-kz-l0j" secondAttribute="trailing" constant="10" id="fqI-ms-exO"/>
                             <constraint firstItem="7Uc-Ov-qjC" firstAttribute="leading" secondItem="tGR-UG-jao" secondAttribute="leading" id="gcW-UO-JTp"/>
                             <constraint firstItem="G5N-ER-dXs" firstAttribute="leading" secondItem="Ztb-OE-FVB" secondAttribute="leading" id="jOH-sy-Svx"/>
